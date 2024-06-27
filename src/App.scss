@@ -1,0 +1,36 @@
+@import "./styles/variables.scss";
+@import "./styles/index.scss";
+
+body {
+  background-color: var(--background-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  background-color: var(--background-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  margin: 0;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--background-secondary);
+  box-shadow: 10px 10px 5px var(--shadow-color);
+}
+.container-main {
+  overflow: auto;
+  height: calc(100vh - 100px);
+  padding: 20px;
+}
+.container-main-small {
+  max-width: 30%;
+}
+.container-main-big {
+  max-width: 60%;
+}

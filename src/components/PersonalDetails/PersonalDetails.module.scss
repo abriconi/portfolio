@@ -1,0 +1,27 @@
+@import "../../styles/index.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapperDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.containerAvatar {
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px var(--shadow-color);
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.avatar {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
