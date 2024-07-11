@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Header } from "./components/Header";
+import { DetailedInfo } from "./components/DetailedInfo/DetailedInfo";
 import { MainInfo } from "./components/MainInfo";
 
 function App() {
@@ -9,12 +9,7 @@ function App() {
         <MainInfo />
       </div>
       <div className="container container-main container-main-big">
-        <Header />
-        <Header />
-        <Header />
-        <Header />
-        <Header />
-        <Header />
+        <DetailedInfo />
       </div>
     </div>
   );
