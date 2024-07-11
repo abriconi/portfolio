@@ -4,14 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 .wrapperDetails {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
-
+.cardContacts {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px 10px;
+}
 .containerAvatar {
   border-radius: 20px;
   box-shadow: 10px 10px 5px var(--shadow-color);
@@ -19,9 +26,15 @@
   height: 150px;
   overflow: hidden;
 }
-
 .avatar {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+.title {
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--background-ternary);
+}
+

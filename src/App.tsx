@@ -1,12 +1,12 @@
 import "./App.scss";
 import { Header } from "./components/Header";
-import { PersonalDetails } from "./components/PersonalDetails/PersonalDetails";
+import { MainInfo } from "./components/MainInfo";
 
 function App() {
   return (
     <div className="layout">
       <div className="container container-main container-main-small">
-        <PersonalDetails />
+        <MainInfo />
       </div>
       <div className="container container-main container-main-big">
         <Header />

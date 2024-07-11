@@ -9,9 +9,16 @@
   --text-primary: #{$text-primary};
 }
 h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
   color: var(--text-primary);
+  margin: 0;
+}
+p {
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--text-primary);
+  margin: 0;
 }
 
 @media (max-width: 768px) {
