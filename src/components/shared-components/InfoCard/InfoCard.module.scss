@@ -23,9 +23,12 @@
 
 }
 .label {
-font-size: 10px;
+    font-size: var(--text-sm);
 }
 .text {
-font-size: 14px;
+    font-size: var(--text-ml);
+}
+.icon {
+    color: var(--text-highlight);
 }
 

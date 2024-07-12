@@ -8,6 +8,11 @@
   --shadow-dark: #{$shadow-dark};
   --text-primary: #{$text-primary};
   --text-highlight: #{$text-highlight};
+  --text-sm: #{$text-sm};
+  --text-ml: #{$text-ml};
+  --text-xl: #{$text-xl};
+  --text-2x: #{$text-2x};
+  --icon-color: #{$icon-color};
 }
 h2 {
   font-size: 25px;
@@ -16,8 +21,6 @@ h2 {
   margin: 0;
 }
 p {
-  font-size: 18px;
-  font-weight: 200;
   color: var(--text-primary);
   margin: 0;
 }

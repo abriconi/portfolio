@@ -31,9 +31,13 @@
   height: 100%;
 }
 .title {
+  font-size: var(--text-xl);
   text-align: center;
   padding: 5px;
   border-radius: 5px;
   background-color: var(--background-ternary);
+}
+.name {
+  font-size: var(--text-2x);
 }
 
