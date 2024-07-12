@@ -5,8 +5,9 @@
   --background-primary: #{$background-primary};
   --background-secondary: #{$background-secondary};
   --background-ternary: #{$background-ternary};
-  --shadow-color: #{$shadow-color};
+  --shadow-dark: #{$shadow-dark};
   --text-primary: #{$text-primary};
+  --text-highlight: #{$text-highlight};
 }
 h2 {
   font-size: 25px;
