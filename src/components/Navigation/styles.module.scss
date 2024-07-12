@@ -1,0 +1,31 @@
+@import "../../styles/index.scss";
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+    background-color: var(--background-ternary);
+    border-radius: 0 0 0 10px;
+    box-shadow: 5px 5px 5px var(--shadow-dark);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.menuItem {
+    list-style: none;
+    color: var(--text-primary);
+    font-size: var(--text-xl);
+
+    &:hover {
+        color: var(--text-highlight);
+        
+    }
+
+}
