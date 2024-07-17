@@ -1,0 +1,17 @@
+@import "../../../styles/index.scss";
+.divider {
+    background-color: var(--text-highlight);
+    width: 1px;
+    height: 3px;
+    border-radius: 1px;
+    animation: grow 1s ease-in-out forwards;
+}
+
+@keyframes grow {
+    0% {
+        width: 10px; /* Initial smaller width */
+    }
+    100% {
+        width: 65px; /* Final larger width */
+    }
+}
