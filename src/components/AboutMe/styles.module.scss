@@ -1,1 +1,45 @@
 @import "../../styles/index.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+
+    .descrWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .description {
+            color: var(--text-primary);
+            font-size: var(--text-ml);
+        }
+    }
+    .toolkit {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .toolkitWrapper {
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            width: 100%;
+            
+            .toolkitCard {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                border-radius: 10px;
+                background-color: var(--background-ternary);
+                box-shadow: 5px 5px 5px var(--shadow-dark);
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
