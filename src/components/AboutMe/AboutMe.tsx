@@ -5,8 +5,6 @@ import { Toolkit } from "./Toolkit";
 import { Activities } from "./Activities";
 
 export const AboutMe = () => {
-    console.log(1);
-
     return (   
         <div className={styles.wrapper}>
             <HeadingDetailed text="About Me"/>
