@@ -4,11 +4,15 @@ import styles from "./styles.module.scss";
 import { Toolkit } from "./Toolkit";
 import { Activities } from "./Activities";
 
-export const AboutMe = () => (
-    <div className={styles.wrapper}>
-        <HeadingDetailed text="About Me"/>
-        <Description />
-        <Activities />
-        <Toolkit />
-    </div>
-)
+export const AboutMe = () => {
+    console.log(1);
+
+    return (   
+        <div className={styles.wrapper}>
+            <HeadingDetailed text="About Me"/>
+            <Description />
+            <Activities />
+            <Toolkit />
+        </div>
+    )
+}
