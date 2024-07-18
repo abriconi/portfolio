@@ -3,16 +3,17 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .heading {
+    margin: 0;
     color: var(--text-primary);
     font-size: var(--text-2x);
 }
-.line {
-    background-color: var(--text-highlight);
-    width: 25px;
-    height: 3px;
-    border-radius: 1px;
+.sm {
+    font-size: var(--text-xl);
+}
+.ml {
+    font-size: var(--text-2x);
 }

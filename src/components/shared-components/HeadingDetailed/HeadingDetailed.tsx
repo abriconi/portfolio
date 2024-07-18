@@ -1,3 +1,4 @@
+import { Divider } from "../Divider/Divider";
 import styles from "./styles.module.scss";
 
 interface Props {
@@ -7,8 +8,8 @@ interface Props {
 export const HeadingDetailed: React.FC<Props> = ({text}) => {
     return (
         <div className={styles.wrapper}>
-            <p className={styles.heading}>{text}</p>
-            <div className={styles.line}></div>
+            <h3 className={styles.heading}>{text}</h3>
+            <Divider />
         </div>
         
     );
