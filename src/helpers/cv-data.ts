@@ -12,6 +12,24 @@ interface Activity {
   logo: IconDefinition,
 }
 
+export interface Education {
+  school: string,
+  date: string,
+  brief: string;
+}
+
+interface Cv_data {
+  name: string,
+  title: string,
+  location: string,
+  email: string,
+  phone: string,
+  aboutMe: string,
+  technologies: Toolkit[],
+  activities: Activity[],
+  education: Education[],
+}
+
 //TODO
 const description = `Hello! I am a passionate and dedicated front-end developer with a keen eye for design and a strong focus on creating seamless user experiences.
 With a solid foundation in HTML, CSS, and JavaScript, I specialize in building responsive and interactive web applications that are both aesthetically pleasing and highly functional. My expertise extends to modern front-end frameworks and libraries, including React, which I use to develop dynamic and efficient applications. I thrive on turning complex problems into simple, elegant solutions and am always eager to learn and adopt new technologies to enhance my skill set. I have a deep appreciation for clean, maintainable code and prioritize performance and accessibility in every project I undertake. Collaboration and communication are at the heart of my work ethic, ensuring that I can effectively translate client requirements into outstanding digital experiences. Whether working on a solo project or as part of a team, I bring creativity, technical proficiency, and a passion for innovation to every endeavor.
@@ -70,7 +88,7 @@ const activities: Activity[] = [
     logo: faGlobe,
   }
 ];
-
+//TODO add tailwind, MaterialUI, moment
 const toolkit: Toolkit[] = [
   { tool: "HTML5", logo: faHtml5 },
   { tool: "CSS3", logo: faCss3 },
@@ -79,8 +97,21 @@ const toolkit: Toolkit[] = [
   { tool: "TypeScript", logo: faCode },
   { tool: "Redux", logo: faCogs },
 ];
+//TODO
+const education: Education[] = [
+  {
+    school: "Kryvyi Rih Technical University",
+    date: "2005-2010",
+    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga."
+  },
+  {
+    school: "Kryvyi Rih Technical University",
+    date: "2005-2010",
+    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga."
+  }
+]
 
-export const CV_DATA = {
+export const CV_DATA: Cv_data = {
   name: "Alona Heptinh",
   title: "Front-end developer",
   location: "Lviv, Ukraine",
@@ -89,4 +120,5 @@ export const CV_DATA = {
   aboutMe: description,
   technologies: toolkit,
   activities: activities,
+  education: education,
 };
