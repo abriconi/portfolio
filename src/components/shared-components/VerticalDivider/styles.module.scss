@@ -1,0 +1,33 @@
+@import "../../../styles/index.scss";
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 17px;
+}
+.divider::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: var(--icon-color);
+    border-radius: 50%;
+    top: 10px;
+    left: -2px;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background-color: var(--icon-color);
+    top: 10px;
+    bottom: -31px;
+    left: 0px;
+}
+.divider:last-child::after {
+    bottom: 10px;
+}
