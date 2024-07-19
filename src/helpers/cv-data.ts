@@ -12,10 +12,18 @@ interface Activity {
   logo: IconDefinition,
 }
 
-export interface Education {
-  school: string,
-  date: string,
+interface Entry {
+  institution: string;
+  date: string;
   brief: string;
+}
+
+export interface Education extends Entry {
+  degree: string,
+}
+
+export interface Experience extends Entry {
+  position: string,
 }
 
 interface Cv_data {
@@ -28,6 +36,7 @@ interface Cv_data {
   technologies: Toolkit[],
   activities: Activity[],
   education: Education[],
+  experience: Experience[],
 }
 
 //TODO
@@ -100,15 +109,38 @@ const toolkit: Toolkit[] = [
 //TODO
 const education: Education[] = [
   {
-    school: "Kryvyi Rih Technical University",
+    institution: "Kryvyi Rih Technical University",
     date: "2005-2010",
-    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga."
+    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga.",
+    degree: "Specialist",
   },
   {
-    school: "Kryvyi Rih Technical University",
+    institution: "Kryvyi Rih Technical University",
     date: "2005-2010",
-    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga."
+    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga.",
+    degree: "Specialist",
   }
+]
+
+const experience: Experience [] =[
+  {
+    institution: "Lorem ipsum",
+    date: "lorem iosum",
+    brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    position: "Front-End Developer",
+  },
+  {
+    institution: "Lorem ipsum",
+    date: "lorem iosum",
+    brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    position: "Front-End Developer",
+  },
+  {
+    institution: "Lorem ipsum",
+    date: "lorem iosum",
+    brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    position: "Front-End Developer",
+  },
 ]
 
 export const CV_DATA: Cv_data = {
@@ -121,4 +153,5 @@ export const CV_DATA: Cv_data = {
   technologies: toolkit,
   activities: activities,
   education: education,
+  experience: experience,
 };
