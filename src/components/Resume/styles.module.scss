@@ -24,38 +24,27 @@
             gap: 20px;
         }
 
-        .listWrapper {
+        .itemWrapper {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             justify-content: flex-start;
-            margin: 0;
-            padding-left: 0;
-
-            .itemWrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                justify-content: flex-start;
-                padding-left: 43px;
-                
-                .itemHeading {
-                    font-size: 16px;
-                    color: var(--text-primary);
-                    margin: 0;
-                }
-                .itemDate {
-                    font-size: 12px;
-                    color: var(--text-primary);
-                }
-                .itemBrief {
-                    font-size: 14px;
-                    color: var(--text-primary);
-                }
-            }
-
+            padding-left: 43px;
             
-        }
+            .itemHeading {
+                font-size: 16px;
+                color: var(--text-primary);
+                margin: 0;
+            }
+            .itemDate {
+                font-size: 12px;
+                color: var(--text-primary);
+            }
+            .itemBrief {
+                font-size: 14px;
+                color: var(--text-primary);
+            }
+        } 
     }
 
     .bgSection {
@@ -71,10 +60,10 @@
             display: flex;
             flex-direction: column;
             gap: 5px;
-
+        
             .skillName {
                 font-size: var(--text-ml);
-
+        
                 .points {
                     color: var(--text-secondary);
                 }
@@ -85,7 +74,7 @@
                 width: 100%;
                 height: 5px;
                 overflow: hidden;
-
+        
                 .skillPoint {
                     background-color: var(--text-highlight);
                     border-radius: 5px;
@@ -95,5 +84,12 @@
         }
     }
 
-
+    .listWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 0;
+        padding-left: 0;
+    }
 }

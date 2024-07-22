@@ -1,10 +1,10 @@
-import { Skill } from "../../helpers/cv-data";
+import { Skill as SkillType} from "../../helpers/cv-data";
 import styles from "./styles.module.scss";
 
 interface Props {
-    item: Skill
+    item: SkillType;
 }
-export const SkillItem: React.FC<Props> = ({ item }) => {
+export const Skill: React.FC<Props> = ({ item }) => {
     return (
         <div className={styles.skillItem}>
             <p className={styles.skillName}>
