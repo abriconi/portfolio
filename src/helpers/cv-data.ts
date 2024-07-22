@@ -26,6 +26,12 @@ export interface Experience extends Entry {
   position: string,
 }
 
+export interface Skill {
+  skill: string,
+  points: number,
+}
+
+
 interface Cv_data {
   name: string,
   title: string,
@@ -37,6 +43,7 @@ interface Cv_data {
   activities: Activity[],
   education: Education[],
   experience: Experience[],
+  skills: Skill[],
 }
 
 //TODO
@@ -121,6 +128,8 @@ const education: Education[] = [
     degree: "Specialist",
   }
 ]
+;
+
 
 const experience: Experience [] =[
   {
@@ -141,7 +150,21 @@ const experience: Experience [] =[
     brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     position: "Front-End Developer",
   },
-]
+];
+
+const skills: Skill[] = [
+  { skill: "JavaScript", points: 90 },
+  { skill: "TypeScript", points: 80 },
+  { skill: "React", points: 85 },
+  { skill: "Redux", points: 55 },
+  { skill: "HTML", points: 95 },
+  { skill: "CSS", points: 90 },
+  { skill: "Sass", points: 80 },
+  { skill: "Git", points: 60 },
+  { skill: "Webpack", points: 65 },
+  { skill: "Node.js", points: 30 },
+];
+
 
 export const CV_DATA: Cv_data = {
   name: "Alona Heptinh",
@@ -154,4 +177,5 @@ export const CV_DATA: Cv_data = {
   activities: activities,
   education: education,
   experience: experience,
+  skills: skills
 };
