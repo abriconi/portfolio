@@ -6,11 +6,11 @@ interface Props<T> {
     ItemComponent: React.FC<{ item: T }>;
 }
 
-export const BgSection = <T,>({ title, array, ItemComponent }: Props<T>) => {
+export const ShadowSection = <T,>({ title, array, ItemComponent }: Props<T>) => {
     return (        
-        <section className={styles.bgSection}>
+        <section className={styles.shadowSection}>
             <h3 className={styles.heading}>{title}</h3>
-            <ul className={styles.listWrapper}>
+            <ul className={styles.scrollWrapper}>
                 {array.map((item, index) => 
                     <ItemComponent key={index} item={item}/>
                 )}
