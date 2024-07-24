@@ -1,5 +1,16 @@
-import { faHtml5, faCss3, faJsSquare, faReact, IconDefinition, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3, faJsSquare, faReact, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faBug, faCode, faCodeBranch, faCogs, faGlobe, faLaptopCode, faMobileAlt, faPencilRuler, faPlug, faSyncAlt, faTachometerAlt, faUniversalAccess } from "@fortawesome/free-solid-svg-icons";
+
+enum Tools {
+  react = "React",
+  router = "React-router",
+  redux = " Redux",
+  scss = "SCSS",
+  moment = "Moment library",
+  material = "MaterialUI",
+  iFarme = "iFrame"
+
+}
 
 interface Toolkit {
   tool: string;
@@ -31,7 +42,21 @@ export interface Skill {
   points: number,
 }
 
+export interface Certificate {
+  name: string,
+  organization: string,
+  date: string,
+  skills: string,
+  url: string,
+}
 
+export interface App {
+  name: string,
+  imgUrl: string,
+  url: string,
+  tools: string[],
+}
+  
 interface Cv_data {
   name: string,
   title: string,
@@ -44,6 +69,8 @@ interface Cv_data {
   education: Education[],
   experience: Experience[],
   skills: Skill[],
+  certificates: Certificate[],
+  apps: App[],
 }
 
 //TODO
@@ -130,7 +157,6 @@ const education: Education[] = [
 ]
 ;
 
-
 const experience: Experience [] =[
   {
     institution: "Lorem ipsum",
@@ -165,6 +191,57 @@ const skills: Skill[] = [
   { skill: "Node.js", points: 30 },
 ];
 
+const certificates: Certificate[] = [
+  { 
+    name: "ICAgile Certified Professional", 
+    organization: "ICAgile", 
+    date: "Feb 2019", 
+    skills: "Scrum, Agile Methodologies, Agile Web Development", 
+    url: "/img/Certificate.webp" 
+  },
+  { 
+    name: "Front-end and JavaScript Program", 
+    organization: "EPAM Systems", 
+    date: "Sep 2022", 
+    skills:"HTML, SCSS, Cascading Style Sheets (CSS), JavaScript",  
+    url: "/img/certifacate-vertical.jpg" 
+  },
+  { 
+    name: "TypeScript-In-Depth", 
+    organization: "",
+    date: "",
+    skills: "",
+    url: "/img/Certificate.webp" 
+  },
+  { 
+    name: "Upper-intermediate English level", 
+    organization: "Green Forest",
+    date: "Feb 2019", 
+    skills: "", 
+    url: "/img/certifacate-vertical.jpg" 
+  },
+]
+//TODO
+const apps: App[] = [
+  {
+    name: "Books",
+    imgUrl: "img/mockup-laptop.jpg",
+    url: "",
+    tools: [Tools.react, Tools.redux],
+  },
+  {
+    name: "Budget Planner",
+    imgUrl: "img/mockup-devices.jpg",
+    url: "",
+    tools: [Tools.react],
+  },
+  {
+    name: "CV Builder",
+    imgUrl: "img/mockup-laptop.jpg",
+    url: "",
+    tools: [Tools.react],
+  },
+]
 
 export const CV_DATA: Cv_data = {
   name: "Alona Heptinh",
@@ -177,5 +254,7 @@ export const CV_DATA: Cv_data = {
   activities: activities,
   education: education,
   experience: experience,
-  skills: skills
+  skills: skills,
+  certificates: certificates,
+  apps: apps,
 };
