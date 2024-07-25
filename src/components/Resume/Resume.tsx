@@ -3,7 +3,6 @@ import { HeadingDetailed } from "../shared-components/HeadingDetailed/HeadingDet
 import { Section } from "./Section";
 import styles from "./styles.module.scss";
 import { Education } from "./Education";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { CV_DATA } from "../../helpers/cv-data";
 import { Experience } from "./Experience";
 import { BgSection } from "./BgSection";
@@ -15,8 +14,8 @@ export const Resume = () => {
     return ( 
         <div className={styles.wrapper}>
             <HeadingDetailed text="Resume"/>
-            <Section icon={faGraduationCap as IconProp} title="Education" array={CV_DATA.education} ItemComponent={Education} />
-            <Section icon={faLaptop as IconProp} title="Experience" array={CV_DATA.experience} ItemComponent={Experience} />
+            <Section icon={faGraduationCap} title="Education" array={CV_DATA.education} ItemComponent={Education} />
+            <Section icon={faLaptop} title="Experience" array={CV_DATA.experience} ItemComponent={Experience} />
             <BgSection title="My Skills" array={CV_DATA.skills} ItemComponent={Skill} />
             <ShadowSection title="My Certificates" array={CV_DATA.certificates} ItemComponent={Certificate} />
         </div> 

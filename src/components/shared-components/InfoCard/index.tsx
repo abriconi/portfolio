@@ -1,19 +1,18 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./InfoCard.module.scss";
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { Icon } from "../Icon/Icon";
 
 interface Props {
-    icon: IconProp;
+    icon: IconDefinition;
     label: string;
     text: string;
 }
 
 export const InfoCard: React.FC<Props> = ({icon, label, text}) => {
-    const iconColor = getComputedStyle(document.documentElement).getPropertyValue('--icon-color').trim();
     return (
         <div className={styles.cardContacts}>
             <div className={styles.wrapperContactIcon}>
-                <FontAwesomeIcon icon={icon} size="xl" style={{color: iconColor}}/>
+                <Icon icon={icon} />
             </div>
             <div className={styles.wrapperContactItem}>
                 <p className={styles.label}>{label}</p>
