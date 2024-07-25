@@ -1,0 +1,74 @@
+@import "../../styles/index.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+  .containerAvatar {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+    .avatar {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .containerDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .title {
+      font-size: var(--text-xl);
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: var(--background-ternary);
+    }
+    .name {
+      font-size: var(--text-2x);
+    }
+  }
+
+  .containerContacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    .contactCard {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .label {
+          font-size: var(--text-sm);
+          color: var(--text-secondary);
+          text-transform: uppercase;
+        }
+        .info {
+          font-size: var(--text-ml);
+          color: var(--text-primary);
+        }
+      }
+    }
+  }
+
+
+}
+
+
+

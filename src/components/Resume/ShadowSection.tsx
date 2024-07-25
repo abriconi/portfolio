@@ -1,3 +1,5 @@
+
+import { ShadowCard } from "../shared-components/ShadowCard/ShadowCard";
 import styles from "./styles.module.scss";
 
 interface Props<T> {
@@ -7,12 +9,14 @@ interface Props<T> {
 }
 
 export const ShadowSection = <T,>({ title, array, ItemComponent }: Props<T>) => {
-    return (        
+    return (
         <section className={styles.shadowSection}>
             <h3 className={styles.heading}>{title}</h3>
             <ul className={styles.scrollWrapper}>
                 {array.map((item, index) => 
-                    <ItemComponent key={index} item={item}/>
+                    <ShadowCard key={index}>
+                        <ItemComponent item={item}/>
+                    </ShadowCard>
                 )}
             </ul>
         </section>

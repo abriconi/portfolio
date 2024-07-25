@@ -1,6 +1,6 @@
 import "./App.scss";
 import { DetailedInfo } from "./components/DetailedInfo/DetailedInfo";
-import { MainInfo } from "./components/MainInfo";
+import { MainInfo } from "./components/MainInfo/MainInfo";
 
 function App() {
   return (

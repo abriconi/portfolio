@@ -210,28 +210,28 @@ const certificates: Certificate[] = [
     organization: "ICAgile", 
     date: "Feb 2019", 
     skills: "Scrum, Agile Methodologies, Agile Web Development", 
-    url: "/img/Certificate.webp" 
+    url: "/img/certificate.webp" 
   },
   { 
     name: "Front-end and JavaScript Program", 
     organization: "EPAM Systems", 
     date: "Sep 2022", 
     skills:"HTML, SCSS, Cascading Style Sheets (CSS), JavaScript",  
-    url: "/img/certifacate-vertical.jpg" 
+    url: "/img/certificate-vertical.jpg" 
   },
   { 
     name: "TypeScript-In-Depth", 
     organization: "",
     date: "",
     skills: "",
-    url: "/img/Certificate.webp" 
+    url: "/img/certificate.webp" 
   },
   { 
     name: "Upper-intermediate English level", 
     organization: "Green Forest",
     date: "Feb 2019", 
     skills: "", 
-    url: "/img/certifacate-vertical.jpg" 
+    url: "/img/certificate-vertical.jpg" 
   },
 ]
 //TODO

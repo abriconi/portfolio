@@ -99,13 +99,9 @@
 
             .certificateItem {
                 padding: 5px;
-                background-color: var(--background-ternary);
                 display: flex;
                 flex-direction: row;
                 gap: 10px;
-                border-radius: 10px;
-                box-shadow: 5px 5px 5px var(--shadow-dark);
-                padding: 10px;
     
                 .imgWrapper {
                     width: 30%;

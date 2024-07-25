@@ -1,25 +1,13 @@
 import { CV_DATA } from "../../../helpers/cv-data";
-import styles from "../MainInfo.module.scss";
+import styles from "../styles.module.scss";
 
-import { InfoCard } from "../../shared-components/InfoCard";
 import { faEnvelope, faLocationDot, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
+import { ContactItem } from "./ContactItem";
 
 export const Contacts = () => (
-    <div className={styles.wrapperDetails}>
-        <InfoCard 
-            icon={faEnvelope}
-            label="Email" 
-            text={CV_DATA.email}>
-        </InfoCard>
-        <InfoCard 
-            icon={faMobileScreen}
-            label="Phone" 
-            text={CV_DATA.phone}>
-        </InfoCard>
-        <InfoCard 
-            icon={faLocationDot}
-            label="Location" 
-            text={CV_DATA.location}>
-        </InfoCard>
-    </div>
+        <div className={styles.containerContacts}>
+            <ContactItem icon={faEnvelope} label="Email" contact={CV_DATA.email} />
+            <ContactItem icon={faLocationDot} label="Location" contact={CV_DATA.location} />
+            <ContactItem icon={faMobileScreen} label="Phone" contact={CV_DATA.phone} />
+        </div>
 )

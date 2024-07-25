@@ -1,4 +1,4 @@
-import styles from "../MainInfo.module.scss";
+import styles from "../styles.module.scss";
 
 export const Avatar = () => {
   return (
