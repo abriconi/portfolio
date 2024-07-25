@@ -1,5 +1,6 @@
 import { faHtml5, faCss3, faJsSquare, faReact, IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { faBug, faCode, faCodeBranch, faCogs, faGlobe, faLaptopCode, faMobileAlt, faPencilRuler, faPlug, faSyncAlt, faTachometerAlt, faUniversalAccess } from "@fortawesome/free-solid-svg-icons";
+import { ExternalRoutes } from "../routes";
 
 enum Tools {
   react = "React",
@@ -224,23 +225,35 @@ const certificates: Certificate[] = [
 //TODO
 const apps: App[] = [
   {
-    name: "Books",
+    name: "Courses",
     imgUrl: "img/mockup-laptop.jpg",
-    url: "",
+    url: ExternalRoutes.Courses,
     tools: [Tools.react, Tools.redux],
   },
   {
     name: "Budget Planner",
     imgUrl: "img/mockup-devices.jpg",
-    url: "",
+    url: ExternalRoutes.Budget,
     tools: [Tools.react],
   },
   {
     name: "CV Builder",
     imgUrl: "img/mockup-laptop.jpg",
-    url: "",
+    url: ExternalRoutes.CV_Builder,
     tools: [Tools.react],
   },
+  {
+    name: "TODO List",
+    imgUrl: "img/mockup-laptop.jpg",
+    url: ExternalRoutes.TODO_List,
+    tools: [Tools.react],
+  },
+  {
+    name: "Calculator",
+    imgUrl: "img/mockup-laptop.jpg",
+    url: ExternalRoutes.Calculator,
+    tools: [Tools.react],
+  }
 ]
 
 export const CV_DATA: Cv_data = {
