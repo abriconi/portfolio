@@ -23,7 +23,9 @@
 
 }
 .label {
+    text-transform: uppercase;
     font-size: var(--text-sm);
+    color: var(--text-secondary);
 }
 .text {
     font-size: var(--text-ml);

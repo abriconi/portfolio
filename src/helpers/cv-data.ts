@@ -1,16 +1,22 @@
-import { faHtml5, faCss3, faJsSquare, faReact, IconDefinition } from "@fortawesome/free-brands-svg-icons";
-import { faBug, faCode, faCodeBranch, faCogs, faGlobe, faLaptopCode, faMobileAlt, faPencilRuler, faPlug, faSyncAlt, faTachometerAlt, faUniversalAccess } from "@fortawesome/free-solid-svg-icons";
+import { faHtml5, faCss3, faJsSquare, faReact, IconDefinition, faCss3Alt, faGoogle, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faBug, faClipboardList, faClock, faCode, faCodeBranch, faGlobe, faLaptopCode, faMobileAlt, faObjectGroup, faPencilRuler, faPlug, faRoute, faSyncAlt, faTachometerAlt, faUniversalAccess, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { ExternalRoutes } from "../routes";
 
 enum Tools {
+  html = "HTML5",
+  css = "CSS3",
+  saas = "SCSS",
+  js = "JavaScript",
+  ts = "TypeScript",
+  tailwind = "Tailwind CSS",
   react = "React",
   router = "React-router",
   redux = " Redux",
   scss = "SCSS",
-  moment = "Moment library",
-  material = "MaterialUI",
-  iFarme = "iFrame"
-
+  moment = "Moment.js",
+  material = "Material UI",
+  iFrame = "iFrame",
+  react_hook_form = "React-hook-form",
 }
 
 interface Toolkit {
@@ -132,14 +138,20 @@ const activities: Activity[] = [
     logo: faGlobe,
   }
 ];
-//TODO add tailwind, MaterialUI, moment
+
 const toolkit: Toolkit[] = [
-  { tool: "HTML5", logo: faHtml5 },
-  { tool: "CSS3", logo: faCss3 },
-  { tool: "JavaScript", logo: faJsSquare },
-  { tool: "React", logo: faReact },
-  { tool: "TypeScript", logo: faCode },
-  { tool: "Redux", logo: faCogs },
+  { tool: Tools.html, logo: faHtml5 },
+  { tool: Tools.css, logo: faCss3 },
+  { tool: Tools.js, logo: faJsSquare },
+  { tool: Tools.scss, logo: faSass },
+  { tool: Tools.react, logo: faReact },
+  { tool: Tools.ts, logo: faCode },
+  { tool: Tools.tailwind, logo: faCss3Alt },
+  { tool: Tools.material, logo: faGoogle },
+  { tool: Tools.moment, logo: faClock },
+  { tool: Tools.iFrame, logo: faObjectGroup },
+  { tool: Tools.react_hook_form, logo: faClipboardList },
+  { tool: Tools.router, logo: faRoute },
 ];
 //TODO
 const education: Education[] = [
