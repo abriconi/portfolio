@@ -1,6 +1,7 @@
 import { faHtml5, faCss3, faJsSquare, faReact, IconDefinition, faCss3Alt, faGoogle, faSass } from "@fortawesome/free-brands-svg-icons";
 import { faBug, faClipboardList, faClock, faCode, faCodeBranch, faGlobe, faLaptopCode, faMobileAlt, faObjectGroup, faPencilRuler, faPlug, faRoute, faSyncAlt, faTachometerAlt, faUniversalAccess, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { ExternalRoutes } from "../routes";
+import { Skill } from "../components/Resume/components/Skill";
 
 enum Tools {
   html = "HTML5",
@@ -17,6 +18,8 @@ enum Tools {
   material = "Material UI",
   iFrame = "iFrame",
   react_hook_form = "React-hook-form",
+  scrum = "Scrum", 
+  agile = "Agile Methodologies",
 }
 
 interface Toolkit {
@@ -53,7 +56,7 @@ export interface Certificate {
   name: string,
   organization: string,
   date: string,
-  skills: string,
+  skills: string[],
   url: string,
 }
 
@@ -80,12 +83,10 @@ interface Cv_data {
   apps: App[],
 }
 
-//TODO
-const description = `Hello! I am a passionate and dedicated front-end developer with a keen eye for design and a strong focus on creating seamless user experiences.
-With a solid foundation in HTML, CSS, and JavaScript, I specialize in building responsive and interactive web applications that are both aesthetically pleasing and highly functional. My expertise extends to modern front-end frameworks and libraries, including React, which I use to develop dynamic and efficient applications. I thrive on turning complex problems into simple, elegant solutions and am always eager to learn and adopt new technologies to enhance my skill set. I have a deep appreciation for clean, maintainable code and prioritize performance and accessibility in every project I undertake. Collaboration and communication are at the heart of my work ethic, ensuring that I can effectively translate client requirements into outstanding digital experiences. Whether working on a solo project or as part of a team, I bring creativity, technical proficiency, and a passion for innovation to every endeavor.
-I am excited to continue my journey in front-end development, constantly striving to push the boundaries of what is possible on the web.`;
+const description = `Hello! I am a passionate front-end developer with a solid foundation in HTML, CSS, JavaScript and React, specializing in building responsive and interactive web applications. 
+I'm constantly self-studying and learning for 4-5 hours daily to enhance my skills. 
+With strong communication skills, I effectively collaborate within teams and take responsibility with confidence. I am excited to continue pushing the boundaries of web development and delivering outstanding digital experiences.`;
 
-//TODO
 const activities: Activity[] = [
   {
     item: "Responsive Apps",
@@ -96,11 +97,6 @@ const activities: Activity[] = [
     item: "Web Development",
     brief: "Creating dynamic and user-friendly websites using modern technologies.",
     logo: faLaptopCode,
-  },
-  {
-    item: "UI/UX Design",
-    brief: "Designing intuitive and engaging user interfaces for enhanced user experience.",
-    logo: faPencilRuler,
   },
   {
     item: "Performance Optimization",
@@ -121,11 +117,6 @@ const activities: Activity[] = [
     item: "API Integration",
     brief: "Integrating third-party APIs to extend the functionality of web applications.",
     logo: faPlug,
-  },
-  {
-    item: "Testing and Debugging",
-    brief: "Implementing thorough testing and debugging to ensure quality and reliability.",
-    logo: faBug,
   },
   {
     item: "Code Refactoring",
@@ -211,16 +202,22 @@ const experience: Experience [] =[
 ];
 
 const skills: Skill[] = [
-  { skill: "JavaScript", points: 90 },
-  { skill: "TypeScript", points: 80 },
-  { skill: "React", points: 85 },
-  { skill: "Redux", points: 55 },
-  { skill: "HTML", points: 95 },
-  { skill: "CSS", points: 90 },
-  { skill: "Sass", points: 80 },
-  { skill: "Git", points: 60 },
-  { skill: "Webpack", points: 65 },
-  { skill: "Node.js", points: 30 },
+  { skill: Tools.html, points: 95},
+  { skill: Tools.js, points: 90 },
+  { skill: Tools.ts, points: 90 },
+  { skill: Tools.react, points: 80 },
+  { skill: Tools.css, points: 90 },
+  { skill: Tools.redux, points: 55 },
+  { skill: "Teamwork", points: 95 },
+  { skill: "Leadership", points: 95 },
+  { skill: "Problem Solving", points: 90 },
+  { skill: "Organization Skills", points: 95 },
+  { skill: "Communication", points: 95 },
+  { skill: "Public speaking", points: 90 },
+  { skill: Tools.agile, points: 70 },
+  { skill: Tools.scrum, points: 70 },
+
+
 ];
 
 const certificates: Certificate[] = [
@@ -228,50 +225,50 @@ const certificates: Certificate[] = [
     name: "ICAgile Certified Professional", 
     organization: "ICAgile", 
     date: "Feb 2019", 
-    skills: "Scrum, Agile Methodologies, Agile Web Development", 
+    skills: [Tools.scrum, Tools.agile],
     url: "/img/certificate.webp" 
   },
   { 
     name: "Front-end and JavaScript Program", 
-    organization: "EPAM Systems", 
+    organization: "EPAM Ukraine", 
     date: "Sep 2022", 
-    skills:"HTML, SCSS, Cascading Style Sheets (CSS), JavaScript",  
+    skills: [Tools.html, Tools.scss, Tools.css, Tools.js, Tools.react, Tools.redux, Tools.router],  
     url: "/img/certificate-vertical.jpg" 
   },
   { 
     name: "TypeScript-In-Depth", 
-    organization: "",
-    date: "",
-    skills: "",
+    organization: "EPAM Ukraine", 
+    date: "Sep 2022",
+    skills: [Tools.ts],
     url: "/img/certificate.webp" 
   },
   { 
     name: "Upper-intermediate English level", 
     organization: "Green Forest",
     date: "Feb 2019", 
-    skills: "", 
+    skills: ["Upper-intermediate English"], 
     url: "/img/certificate-vertical.jpg" 
   },
-]
-//TODO
+];
+
 const apps: App[] = [
   {
     name: "Courses",
     imgUrl: "img/mockup-laptop.jpg",
     url: ExternalRoutes.Courses,
-    tools: [Tools.react, Tools.redux],
+    tools: [Tools.react, Tools.redux, Tools.scss, Tools.ts, Tools.router],
   },
   {
     name: "Budget Planner",
     imgUrl: "img/mockup-devices.jpg",
     url: ExternalRoutes.Budget,
-    tools: [Tools.react],
+    tools: [Tools.react, Tools.router, Tools.material, Tools.moment, Tools.react_hook_form],
   },
   {
     name: "CV Builder",
     imgUrl: "img/mockup-laptop.jpg",
     url: ExternalRoutes.CV_Builder,
-    tools: [Tools.react],
+    tools: [Tools.react, Tools.router, Tools.react_hook_form, Tools.iFrame, Tools.tailwind],
   },
   {
     name: "TODO List",
@@ -285,7 +282,7 @@ const apps: App[] = [
     url: ExternalRoutes.Calculator,
     tools: [Tools.react],
   }
-]
+];
 
 export const CV_DATA: Cv_data = {
   name: "Alona Heptinh",

@@ -5,11 +5,14 @@ import styles from "./styles.module.scss";
 import { App } from "../../helpers/cv-data";
 import React from "react";
 import { ScaleCard } from "../shared-components/ScaleCard/ScaleCard";
+import { formatArrayToString } from "../../helpers/utils";
 
 interface Props {
     app: App;
 }
 export const AppItem: React.FC<Props> = ({ app }) => {
+    const tools = formatArrayToString(app.tools);
+
     return (
         <ScaleCard>
             <li className={styles.itemWrapper}>
@@ -22,11 +25,7 @@ export const AppItem: React.FC<Props> = ({ app }) => {
                     </div>
                     <div className={styles.brief}>
                         <h2 className={styles.name}>{app.name}</h2>
-                        <p className={styles.tools}>Tools: {app.tools.map((tool, index) => (
-                            <span className={styles.tool} key={index}>
-                                {tool}{index < app.tools.length - 1 && ", "}
-                            </span>
-                        ))}</p>
+                        <p className={styles.tools}>Tools: <span className={styles.tool}>{tools}</span></p>
                     </div>
                 </a>
                 

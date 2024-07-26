@@ -21,6 +21,7 @@
         .description {
             color: var(--text-primary);
             font-size: var(--text-ml);
+            margin: 0;
         }
     }
     .toolkit {
@@ -44,6 +45,7 @@
             .toolBrief {
                 font-size: var(--text-sm);
                 color: var(--text-primary);
+                margin: 0;
             }
         }
     }
@@ -62,7 +64,6 @@
                 flex-direction: row;
                 gap: 15px;
                 align-items: center;
-                padding: 15px 20px 15px 15px;
 
                 .description {
                     display: flex;
@@ -79,6 +80,7 @@
                     .itemBrief {
                         color: var(--text-primary);
                         font-size: var(--text-sm);
+                        margin: 0;
                     }
                 }
 

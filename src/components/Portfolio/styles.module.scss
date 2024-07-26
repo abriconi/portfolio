@@ -7,9 +7,9 @@
     padding: 30px;
 
     .portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
         padding: 0;
         margin: 0;
     }
@@ -25,8 +25,8 @@
             .imgWrapper {
                 overflow: hidden;
                 position: relative;
-                width: 250px; 
-                height: 141px;
+                width: 100%; 
+                height: auto;
                 border-radius: 10px;
             
                 .img {
@@ -38,15 +38,16 @@
                     filter: brightness(100%);
                     border-radius: 10px;
     
-                    &:hover {
+                    &:hover .img {
                         filter: brightness(70%);
                         transform: scale(1.1);
                     }
+                    &:hover .iconWrapper {
+                        opacity: 1;
+                    }
                 }
     
-                &:hover .iconWrapper {
-                    opacity: 1;
-                }
+                
             }
     
             .iconWrapper {
@@ -62,16 +63,18 @@
             .brief {
                 display: flex;
                 flex-direction: column;
-                gap: 5px;
+                gap: 7px;
                 padding: 5px;
     
                 .name {
                     font-size: var(--text-xl);
                     color: var(--text-primary);
+                    margin: 0;
                 }
                 .tools {
                     font-size: var(--text-ml);
                     color: var(--text-primary);
+                    margin: 0;
                     
                     .tool {
                         color: var(--text-secondary);
