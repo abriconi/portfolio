@@ -153,42 +153,61 @@ const toolkit: Toolkit[] = [
   { tool: Tools.react_hook_form, logo: faClipboardList },
   { tool: Tools.router, logo: faRoute },
 ];
-//TODO
+
 const education: Education[] = [
   {
     institution: "Kryvyi Rih Technical University",
     date: "2005-2010",
-    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga.",
+    brief: "I hold a degree in Program Management of Foreign Economic Activity from Kryvyi Rih Technical University, providing me with a strong foundation in international business and trade.",
     degree: "Specialist",
   },
   {
-    institution: "Kryvyi Rih Technical University",
-    date: "2005-2010",
-    brief: "Business Administration and Management, Specialist, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, saepe sint iure praesentium voluptate nemo natus ipsum porro cumque optio dolores architecto vitae nostrum ducimus? Nulla in enim quo fuga.",
-    degree: "Specialist",
+    institution: "ICP-Certification",
+    date: "2019",
+    brief: "Passed Agile courses and obtained certification, studying project management methodologies, familiarizing with Scrum team roles, learning to correctly assess task difficulty and understanding Scrum ceremonies and their purposes.",
+    degree: "Agile Certification"
+  },
+  {
+    institution: "Epam Ukraine",
+    date: "2022-2023",
+    brief: "Completed comprehensive courses Front-End and JavaScript Program Intermediate Level covering core front-end technologies including JavaScript (JS), HTML, CSS, SCSS, React, and Redux. Gained practical experience in building responsive and interactive web applications, enhancing skills in modern web development practices and tools. Built the project 'Courses'.",
+    degree: "",
+  },
+  {
+    institution: "Epam Ukraine",
+    date: "2023",
+    brief: "Completed an in-depth TypeScript course, gaining comprehensive knowledge of TypeScript's advanced features, type system, and integration with modern JavaScript frameworks. Enhanced ability to develop robust and maintainable codebases.",
+    degree: ""
   }
-]
-;
+
+];
 
 const experience: Experience [] =[
   {
-    institution: "Lorem ipsum",
-    date: "lorem iosum",
-    brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    position: "Front-End Developer",
+    institution: "KONKORD",
+    date: "2011 - 2015",
+    brief: "Built long-term relationships with key clients, searched for new clients, presented and sold products, managed client expectations, and resolved complaints.",
+    position: "Sales Manager",
   },
   {
-    institution: "Lorem ipsum",
-    date: "lorem iosum",
-    brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    position: "Front-End Developer",
+    institution: "Manufactura.ua",
+    date: "2015 - 2015",
+    brief: "Searched for new clients, presented and sold products, managed client expectations, and resolved complaints.",
+    position: "Sales Manager",
   },
   {
-    institution: "Lorem ipsum",
-    date: "lorem iosum",
-    brief: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    position: "Front-End Developer",
+    institution: "Manufactura.ua",
+    date: "2015 - 2019",
+    brief:  "Led a sales team from 10 to 30 members, built a sales retail department including managers of different levels and engineers, managed 14 stores, and opened 10 new stores. Taught and improved team's knowledge through mentoring and performance evaluations, conducted daily meetings for product updates, worked with key clients through meetings and negotiations, adapted a web development team for e-commerce support, created motivation systems, set and implemented sales plans, developed ad strategies, implemented a CRM system for the sales department, resolved complaints, and managed team and customer expectations.",
+    position: "Head Of Sales Department",
   },
+  {
+    institution: "IT Fabryka",
+    date: "2019 - 2020",
+    brief: "Increased the company's net profit by attracting new clients and recontacting old customers, recruiting new IT specialists to boost productivity, initiating and implementing an IT-specialist training program, analyzing and regulating company expenses, and calculating compensation and bonuses.",
+    position: "Chief Financial Officer",
+  },
+  
 ];
 
 const skills: Skill[] = [
