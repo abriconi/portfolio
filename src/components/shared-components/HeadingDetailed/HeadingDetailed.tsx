@@ -8,7 +8,7 @@ interface Props {
 export const HeadingDetailed: React.FC<Props> = ({text}) => {
     return (
         <div className={styles.wrapper}>
-            <h3 className={styles.heading}>{text}</h3>
+            <h1 className={styles.heading}>{text}</h1>
             <DividerAnimated />
         </div>
         

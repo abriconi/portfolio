@@ -1,12 +1,19 @@
 @import "../../styles/index.scss";
 
+.heading {
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 15px 0;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 15px;
 
-    .descrWrapper {
+    .descriptionSection {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -20,11 +27,6 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-
-        .heading {
-            font-size: var(--text-xl);
-            color: var(--text-primary);
-        }
 
         .toolkitWrapper {
             display: grid;
@@ -41,18 +43,14 @@
 
             .toolBrief {
                 font-size: var(--text-sm);
+                color: var(--text-primary);
             }
         }
     }
-    .activities {
+    .activitiesSection {
         display: flex;
         flex-direction: column;
         gap: 15px;
-
-        .heading {
-            font-size: var(--text-xl);
-            color: var(--text-primary);
-        }
 
         .activitiesWrapper {
             display: grid;

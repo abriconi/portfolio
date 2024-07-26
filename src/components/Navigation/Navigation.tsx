@@ -6,10 +6,10 @@ export const Navigation = () => {
   return (
     <nav className={styles.wrapper}>
       <ul className={styles.menu}>
-        <li className={styles.menuItem}><Link to={AppRoutes.About}>About</Link></li>
-        <li className={styles.menuItem}><Link to={AppRoutes.Resume}>Resume</Link></li>
-        <li className={styles.menuItem}><Link to={AppRoutes.Portfolio}>Portfolio</Link></li>
-        <li className={styles.menuItem}><Link to={AppRoutes.Features}>Features</Link></li>
+        <li className={styles.menuItem}><Link to={AppRoutes.About} className={styles.link}>About</Link></li>
+        <li className={styles.menuItem}><Link to={AppRoutes.Resume} className={styles.link}>Resume</Link></li>
+        <li className={styles.menuItem}><Link to={AppRoutes.Portfolio} className={styles.link}>Portfolio</Link></li>
+        <li className={styles.menuItem}><Link to={AppRoutes.Features} className={styles.link}>Features</Link></li>
       </ul>
     </nav>
   );

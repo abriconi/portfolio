@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./styles.module.scss";
-import { Certificate as CertificateType } from "../../helpers/cv-data";
+import styles from "../styles.module.scss";
+import { Certificate as CertificateType } from "../../../helpers/cv-data";
 
 interface Props {
     item: CertificateType,

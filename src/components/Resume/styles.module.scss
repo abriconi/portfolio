@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 .heading {
-    font-size: 18px;
+    font-size: var(--text-2xl);
     color: var(--text-primary);
     margin: 0;
 }
@@ -32,17 +32,19 @@
             padding-left: 43px;
             
             .itemHeading {
-                font-size: 16px;
+                font-size: var(--text-xl);
                 color: var(--text-primary);
                 margin: 0;
             }
             .itemDate {
-                font-size: 12px;
-                color: var(--text-primary);
+                font-size: var(--text-ml);
+                margin: 0;
+                color: var(--text-secondary);
             }
             .itemBrief {
-                font-size: 14px;
+                font-size: var(--text-ml);
                 color: var(--text-primary);
+                margin: 0;
             }
         } 
     }
@@ -63,6 +65,7 @@
         
             .skillName {
                 font-size: var(--text-ml);
+                color: var(--text-primary);
         
                 .points {
                     color: var(--text-secondary);
@@ -121,12 +124,15 @@
 
                     .name {
                         font-size: var(--text-ml);
+                        color: var(--text-primary);
                     }
                     .info {
                         font-size: var(--text-sm);
+                        color: var(--text-primary);
                     }
                     .skills {
                         font-size: var(--text-sm);
+                        color: var(--text-primary);
                         font-weight: 800;
 
                         .skillItems {

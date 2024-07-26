@@ -6,8 +6,8 @@ import { ShadowCard } from "../shared-components/ShadowCard/ShadowCard";
 
 export const Toolkit  = () => {
     return (
-        <div className={styles.toolkit}>
-            <h4 className={styles.heading}>My Toolkit</h4>
+        <section className={styles.toolkit}>
+            <h2 className={styles.heading}>My Toolkit</h2>
             <div className={styles.toolkitWrapper}>
                 {CV_DATA.technologies.map((item, index) =>      
                 <ShadowCard  key={index}>
@@ -18,6 +18,6 @@ export const Toolkit  = () => {
                     </ShadowCard>        
                 )}
             </div>
-        </div>
+        </section>
     )
 }

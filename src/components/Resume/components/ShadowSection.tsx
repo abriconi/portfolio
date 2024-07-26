@@ -1,6 +1,6 @@
 
-import { ShadowCard } from "../shared-components/ShadowCard/ShadowCard";
-import styles from "./styles.module.scss";
+import { ShadowCard } from "../../shared-components/ShadowCard/ShadowCard";
+import styles from "../styles.module.scss";
 
 interface Props<T> {
     title: string;

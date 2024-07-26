@@ -1,6 +1,5 @@
 import { CV_DATA } from "../../../helpers/cv-data";
 import styles from "../styles.module.scss";
-
 import { faEnvelope, faLocationDot, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 import { ContactItem } from "./ContactItem";
 

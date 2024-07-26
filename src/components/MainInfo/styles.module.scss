@@ -26,15 +26,18 @@
     align-items: center;
     gap: 15px;
 
-    .title {
-      font-size: var(--text-xl);
-      text-align: center;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: var(--background-ternary);
-    }
     .name {
       font-size: var(--text-2x);
+      margin: 0;
+      color: var(--text-primary);
+    }
+
+    .title {
+      font-size: var(--text-xl);
+      color: var(--text-primary);
+      padding: 7px 15px;
+      border-radius: 7px;
+      background-color: var(--background-ternary);
     }
   }
 
@@ -66,8 +69,6 @@
       }
     }
   }
-
-
 }
 
 

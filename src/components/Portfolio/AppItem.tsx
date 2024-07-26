@@ -21,7 +21,7 @@ export const AppItem: React.FC<Props> = ({ app }) => {
                         </div>
                     </div>
                     <div className={styles.brief}>
-                        <p className={styles.name}>{app.name}</p>
+                        <h2 className={styles.name}>{app.name}</h2>
                         <p className={styles.tools}>Tools: {app.tools.map((tool, index) => (
                             <span className={styles.tool} key={index}>
                                 {tool}{index < app.tools.length - 1 && ", "}

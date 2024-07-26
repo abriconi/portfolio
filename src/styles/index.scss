@@ -12,18 +12,9 @@
   --text-sm: #{$text-sm};
   --text-ml: #{$text-ml};
   --text-xl: #{$text-xl};
+  --text-2xl: #{$text-2xl};
   --text-2x: #{$text-2x};
   --icon-color: #{$icon-color};
-}
-h2 {
-  font-size: 25px;
-  font-weight: 200;
-  color: var(--text-primary);
-  margin: 0;
-}
-p {
-  color: var(--text-primary);
-  margin: 0;
 }
 
 @media (max-width: 768px) {

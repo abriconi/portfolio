@@ -6,10 +6,10 @@ export const Description = () => {
   const paragraphs = aboutMe.split('\n').filter(paragraph => paragraph.trim() !== '');
 
   return (
-    <div className={styles.descrWrapper}>
+    <section className={styles.descriptionSection}>
       {paragraphs.map((paragraph, index) => (
         <p className={styles.description} key={index}>{paragraph}</p>
       ))}
-    </div>
+    </section>
   )
 }

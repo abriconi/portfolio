@@ -1,14 +1,14 @@
 import { faGraduationCap, faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { HeadingDetailed } from "../shared-components/HeadingDetailed/HeadingDetailed";
-import { Section } from "./Section";
+import { Section } from "./components/Section";
 import styles from "./styles.module.scss";
-import { Education } from "./Education";
+import { Education } from "./components/Education";
 import { CV_DATA } from "../../helpers/cv-data";
-import { Experience } from "./Experience";
-import { BgSection } from "./BgSection";
-import { Skill } from "./Skill";
-import { Certificate } from "./Certificate";
-import { ShadowSection } from "./ShadowSection";
+import { Experience } from "./components/Experience";
+import { BgSection } from "./components/BgSection";
+import { Skill } from "./components/Skill";
+import { Certificate } from "./components/Certificate";
+import { ShadowSection } from "./components/ShadowSection";
 
 export const Resume = () => {
     return ( 

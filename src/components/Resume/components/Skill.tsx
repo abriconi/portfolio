@@ -1,5 +1,5 @@
-import { Skill as SkillType} from "../../helpers/cv-data";
-import styles from "./styles.module.scss";
+import { Skill as SkillType} from "../../../helpers/cv-data";
+import styles from "../styles.module.scss";
 
 interface Props {
     item: SkillType;

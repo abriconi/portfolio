@@ -20,12 +20,16 @@
 }
 .menuItem {
     list-style: none;
-    color: var(--text-primary);
     font-size: var(--text-xl);
+    color: var(--text-primary);
 
-    &:hover {
-        color: var(--text-highlight);
-        
+    .link {
+        text-decoration: none;
+        color: var(--text-primary);
+
+        &:hover {
+            color: var(--text-highlight);
+            
+        }
     }
-
 }
