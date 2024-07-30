@@ -8,17 +8,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+  .modalContent {
+    position: relative;
+    max-width: 45%;
+    max-height: auto;
+    overflow: auto;
+
+    .modalImage {
+        max-width: 100%;
+        max-height: 100vh;
+      }
+  }
 }
 
-.modalContent {
-  position: relative;
-  max-width: 45%;
-  max-height: auto;
-  overflow: auto;
-}
 
-.modalImage {
-  max-width: 100%;
-  max-height: 100vh;
-}
+
+

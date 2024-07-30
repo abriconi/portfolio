@@ -5,12 +5,12 @@ import { Toolkit } from "./Toolkit";
 import { Activities } from "./Activities";
 
 export const AboutMe = () => {
-    return (   
-        <div className={styles.wrapper}>
-            <HeadingDetailed text="About Me"/>
-            <Description />
-            <Activities />
-            <Toolkit />
-        </div>
-    )
-}
+  return (
+    <div className={styles.wrapper}>
+      <HeadingDetailed text="About Me" />
+      <Description />
+      <Activities />
+      <Toolkit />
+    </div>
+  );
+};

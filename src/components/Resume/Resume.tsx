@@ -11,14 +11,13 @@ import { Certificate } from "./components/Certificate";
 import { ShadowSection } from "./components/ShadowSection";
 
 export const Resume = () => {
-    return ( 
-        <div className={styles.wrapper}>
-            <HeadingDetailed text="Resume"/>
-            <Section icon={faGraduationCap} title="Education" array={CV_DATA.education} ItemComponent={Education} />
-            <Section icon={faLaptop} title="Experience" array={CV_DATA.experience} ItemComponent={Experience} />
-            <BgSection title="My Skills" array={CV_DATA.skills} ItemComponent={Skill} />
-            <ShadowSection title="My Certificates" array={CV_DATA.certificates} ItemComponent={Certificate} />
-        </div> 
-    );
-}
-    
+  return (
+    <div className={styles.wrapper}>
+      <HeadingDetailed text="Resume" />
+      <Section icon={faGraduationCap} title="Education" array={CV_DATA.education} ItemComponent={Education} />
+      <Section icon={faLaptop} title="Experience" array={CV_DATA.experience} ItemComponent={Experience} />
+      <BgSection title="My Skills" array={CV_DATA.skills} ItemComponent={Skill} />
+      <ShadowSection title="My Certificates" array={CV_DATA.certificates} ItemComponent={Certificate} />
+    </div>
+  );
+};

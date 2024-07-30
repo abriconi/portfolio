@@ -4,12 +4,14 @@ import styles from "./styles.module.scss";
 import { AppItem } from "./AppItem";
 
 export const Portfolio = () => {
-    return (
-        <div className={styles.wrapper}>
-            <HeadingDetailed text="Portfolio"/>
-            <ul className={styles.portfolio}>
-               {CV_DATA.apps.map((app, index) => <AppItem app={app} key={index}/>)} 
-            </ul>
-        </div>
-    )
-}
+  return (
+    <div className={styles.wrapper}>
+      <HeadingDetailed text="Portfolio" />
+      <ul className={styles.portfolio}>
+        {CV_DATA.apps.map((app, index) => (
+          <AppItem app={app} key={index} />
+        ))}
+      </ul>
+    </div>
+  );
+};

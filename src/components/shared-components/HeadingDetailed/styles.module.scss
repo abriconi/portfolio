@@ -1,14 +1,13 @@
 @import "../../../styles/index.scss";
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-    .heading {
-        margin: 0;
-        color: var(--text-primary);
-        font-size: var(--text-2x);
-    }
+  .heading {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: var(--text-2x);
+  }
 }
-

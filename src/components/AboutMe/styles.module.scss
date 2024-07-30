@@ -1,93 +1,89 @@
 @import "../../styles/index.scss";
 
 .heading {
-    font-size: var(--text-xl);
-    color: var(--text-primary);
-    font-weight: 600;
-    margin: 15px 0;
+  font-size: var(--text-xl);
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 15px 0;
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 15px;
+
+  .descriptionSection {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 15px;
+    gap: 10px;
 
-    .descriptionSection {
+    .description {
+      color: var(--text-primary);
+      font-size: var(--text-ml);
+      margin: 0;
+    }
+  }
+  .toolkit {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .toolkitWrapper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+      width: 100%;
+
+      .toolkitCard {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .toolBrief {
+        font-size: var(--text-sm);
+        color: var(--text-primary);
+        margin: 0;
+      }
+    }
+  }
+  .activitiesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .activitiesWrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      .activitiesCard {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
 
         .description {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: flex-start;
+
+          .itemHeading {
             color: var(--text-primary);
             font-size: var(--text-ml);
             margin: 0;
+          }
+
+          .itemBrief {
+            color: var(--text-primary);
+            font-size: var(--text-sm);
+            margin: 0;
+          }
         }
+      }
     }
-    .toolkit {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-        .toolkitWrapper {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 30px;
-            width: 100%;
-            
-            .toolkitCard {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                align-items: center;
-            }
-
-            .toolBrief {
-                font-size: var(--text-sm);
-                color: var(--text-primary);
-                margin: 0;
-            }
-        }
-    }
-    .activitiesSection {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-        .activitiesWrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-
-            .activitiesCard {
-                display: flex;
-                flex-direction: row;
-                gap: 15px;
-                align-items: center;
-
-                .description {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    align-items: flex-start;
-
-                    .itemHeading {
-                        color: var(--text-primary);
-                        font-size: var(--text-ml);
-                        margin: 0;
-                    }
-                    
-                    .itemBrief {
-                        color: var(--text-primary);
-                        font-size: var(--text-sm);
-                        margin: 0;
-                    }
-                }
-
-                
-            }
-        }
-    }
+  }
 }
-
-
