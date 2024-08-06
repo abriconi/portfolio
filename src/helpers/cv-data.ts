@@ -1,4 +1,16 @@
-import { faHtml5, faCss3, faJsSquare, faReact, faCss3Alt, faGoogle, faSass } from "@fortawesome/free-brands-svg-icons";
+/* eslint-disable max-len */
+import {
+  faHtml5,
+  faCss3,
+  faJsSquare,
+  faReact,
+  faCss3Alt,
+  faGoogle,
+  faSass,
+  faLinkedin,
+  faInstagram,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faClipboardList,
   faClock,
@@ -15,19 +27,18 @@ import {
   faUniversalAccess,
 } from "@fortawesome/free-solid-svg-icons";
 import { ExternalRoutes } from "../routes";
-import { Activity, App, Certificate, Cv_data, Education, Experience, Toolkit, Skill } from "./interfaces";
+import { Activity, App, Certificate, Cv_data, Education, Experience, Toolkit, Skill, Social } from "./interfaces";
 
 enum Tools {
   html = "HTML5",
   css = "CSS3",
-  saas = "SCSS",
+  scss = "SCSS",
   js = "JavaScript",
   ts = "TypeScript",
   tailwind = "Tailwind CSS",
   react = "React",
   router = "React-router",
   redux = " Redux",
-  scss = "SCSS",
   moment = "Moment.js",
   material = "Material UI",
   iFrame = "iFrame",
@@ -240,6 +251,12 @@ const apps: App[] = [
   },
 ];
 
+const social: Social[] = [
+  { link: "https://www.linkedin.com/in/alonaheptinh", socialName: "LinkedIn", icon: faLinkedin },
+  { link: "https://www.instagram.com/abriconi/?hl=uk", socialName: "Instagram", icon: faInstagram },
+  { link: "https://github.com/abriconi", socialName: "GitHub", icon: faGithub },
+];
+
 export const CV_DATA: Cv_data = {
   name: "Alona Heptinh",
   title: "Front-end developer",
@@ -254,4 +271,5 @@ export const CV_DATA: Cv_data = {
   skills: skills,
   certificates: certificates,
   apps: apps,
+  social: social,
 };

@@ -1,63 +1,69 @@
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
 export interface Toolkit {
-    tool: string;
-    logo: IconDefinition;
+  tool: string;
+  logo: IconDefinition;
 }
-  
+
 export interface Activity {
-    item: string;
-    brief: string;
-    logo: IconDefinition;
+  item: string;
+  brief: string;
+  logo: IconDefinition;
 }
-  
+
 interface Entry {
-    institution: string;
-    date: string;
-    brief: string;
+  institution: string;
+  date: string;
+  brief: string;
 }
-  
+
 export interface Education extends Entry {
-    degree: string;
+  degree: string;
 }
-  
+
 export interface Experience extends Entry {
-    position: string;
+  position: string;
 }
-  
+
 export interface Skill {
-    skill: string;
-    points: number;
+  skill: string;
+  points: number;
 }
-  
+
 export interface Certificate {
-    name: string;
-    organization: string;
-    date: string;
-    skills: string[];
-    url: string;
+  name: string;
+  organization: string;
+  date: string;
+  skills: string[];
+  url: string;
 }
-  
+
 export interface App {
-    name: string;
-    imgUrl: string;
-    url: string;
-    tools: string[];
+  name: string;
+  imgUrl: string;
+  url: string;
+  tools: string[];
 }
-  
+
+export interface Social {
+  link: string;
+  socialName: string;
+  icon: IconDefinition;
+}
+
 export interface Cv_data {
-    name: string;
-    title: string;
-    location: string;
-    email: string;
-    phone: string;
-    aboutMe: string;
-    technologies: Toolkit[];
-    activities: Activity[];
-    education: Education[];
-    experience: Experience[];
-    skills: Skill[];
-    certificates: Certificate[];
-    apps: App[];
+  name: string;
+  title: string;
+  location: string;
+  email: string;
+  phone: string;
+  aboutMe: string;
+  technologies: Toolkit[];
+  activities: Activity[];
+  education: Education[];
+  experience: Experience[];
+  skills: Skill[];
+  certificates: Certificate[];
+  apps: App[];
+  social: Social[];
 }
-  
