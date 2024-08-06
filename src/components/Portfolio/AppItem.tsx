@@ -1,9 +1,9 @@
+import React from "react";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./styles.module.scss";
-import { App } from "../../helpers/cv-data";
-import React from "react";
+import { App } from "../../helpers/interfaces";
 import { ScaleCard } from "../shared-components/ScaleCard/ScaleCard";
 import { formatArrayToString } from "../../helpers/utils";
 
