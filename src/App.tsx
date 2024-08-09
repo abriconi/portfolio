@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="layout">
       <div className="container container-main container-main-small">
+        <h1>new header</h1>
         <MainInfo />
       </div>
       <div className="container container-main container-main-big">
