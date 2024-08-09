@@ -5,8 +5,8 @@ import { Icon } from "../../shared-components/Icon/Icon";
 export const Social = () => {
   return (
     <div className={styles.containerSocial}>
-      {CV_DATA.social.map((item) => (
-        <a href={item.link}>
+      {CV_DATA.social.map((item, index) => (
+        <a href={item.link} key={index}>
           <Icon icon={item.icon} size="xl" />
         </a>
       ))}

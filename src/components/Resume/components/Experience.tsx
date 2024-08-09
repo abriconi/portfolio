@@ -1,4 +1,4 @@
-import { Experience as ExperienceType } from "../../../helpers/cv-data";
+import { Experience as ExperienceType } from "../../../helpers/interfaces";
 import styles from "../styles.module.scss";
 
 interface Props {

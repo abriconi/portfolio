@@ -1,4 +1,4 @@
-import { Skill as SkillType } from "../../../helpers/cv-data";
+import { Skill as SkillType } from "../../../helpers/interfaces";
 import styles from "../styles.module.scss";
 
 interface Props {

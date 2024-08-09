@@ -221,19 +221,19 @@ const certificates: Certificate[] = [
 const apps: App[] = [
   {
     name: "Courses",
-    imgUrl: "img/mockup-laptop.jpg",
+    imgUrl: "img/courses.jpg",
     url: ExternalRoutes.Courses,
     tools: [Tools.react, Tools.redux, Tools.scss, Tools.ts, Tools.router],
   },
   {
     name: "Budget Planner",
-    imgUrl: "img/mockup-devices.jpg",
+    imgUrl: "img/cv-builder.jpg",
     url: ExternalRoutes.Budget,
     tools: [Tools.react, Tools.router, Tools.material, Tools.moment, Tools.react_hook_form],
   },
   {
     name: "CV Builder",
-    imgUrl: "img/mockup-laptop.jpg",
+    imgUrl: "img/cv-builder.jpg",
     url: ExternalRoutes.CV_Builder,
     tools: [Tools.react, Tools.router, Tools.react_hook_form, Tools.iFrame, Tools.tailwind],
   },
@@ -241,12 +241,6 @@ const apps: App[] = [
     name: "TODO List",
     imgUrl: "img/mockup-laptop.jpg",
     url: ExternalRoutes.TODO_List,
-    tools: [Tools.react],
-  },
-  {
-    name: "Calculator",
-    imgUrl: "img/mockup-laptop.jpg",
-    url: ExternalRoutes.Calculator,
     tools: [Tools.react],
   },
 ];

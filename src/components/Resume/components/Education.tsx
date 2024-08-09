@@ -1,5 +1,5 @@
-import { Education as EducationType } from "../../../helpers/cv-data";
 import styles from "../styles.module.scss";
+import { Education as EducationType } from "../../../helpers/interfaces";
 
 interface Props {
   item: EducationType;
